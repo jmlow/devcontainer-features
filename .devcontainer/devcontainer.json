@@ -13,7 +13,8 @@
 			"extensions": [
 				"mads-hartmann.bash-ide-vscode",
 				"EditorConfig.EditorConfig",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"vscodevim.vim"
 			]
 		}
 	},
