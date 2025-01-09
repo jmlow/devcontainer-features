@@ -13,5 +13,5 @@ else
 	curl https://mise.run | sh
 fi
 
-echo 'eval "$($install_path activate bash)"' >> $_CONTAINER_USER_HOME/.bashrc
-echo 'eval "$($install_path activate bash --shims)"' >> $_CONTAINER_USER_HOME/.profile
+echo 'eval "$(MISE_INSTALL_PATH activate bash)"' >> $_CONTAINER_USER_HOME/.bashrc
+echo 'eval "$(MISE_INSTALL_PATH activate bash --shims)"' >> $_CONTAINER_USER_HOME/.profile
