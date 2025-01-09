@@ -8,15 +8,28 @@
 
 This repository contains a _collection_ of two Features - `curl` and `mise`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
 
-### `mise`
+### `curl`
 
-The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot version manager inside the dev container.
+The `curl` feature installs [curl](https://curl.se/) inside the dev container.
 
 ```jsonc
 {
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
-		"ghcr.io/jmlow/devcontainer-features/mise:1": {
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
+	}
+}
+```
+
+### `mise`
+
+The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot version manager, inside the dev container.
+
+```jsonc
+{
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/jmlow/devcontainer-features/mise:0": {
 			"debug": false,
 			"quiet": true,
 			"version": ""
