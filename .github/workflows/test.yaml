@@ -1,4 +1,4 @@
-name: "CI - Test Features"
+name: 'CI - Test Features'
 on:
   push:
     branches:
@@ -13,8 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - mise
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -22,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: "Install latest devcontainer CLI"
+      - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
@@ -34,12 +33,11 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - mise
     steps:
       - uses: actions/checkout@v4
 
-      - name: "Install latest devcontainer CLI"
+      - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
 
       - name: "Generating tests for '${{ matrix.features }}' scenarios"
@@ -51,8 +49,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: "Install latest devcontainer CLI"
+      - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
 
-      - name: "Testing global scenarios"
+      - name: 'Testing global scenarios'
         run: devcontainer features test --global-scenarios-only .

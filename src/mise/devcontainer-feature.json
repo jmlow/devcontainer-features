@@ -1,0 +1,23 @@
+{
+	"name": "mise-en-place",
+	"id": "mise",
+	"version": "1.0.0",
+	"description": "A mise.jdx.dev feature",
+	"options": {
+		"debug": {
+			"type": "boolean",
+			"default": false,
+			"description": "Enable debug logging"
+		},
+		"quiet": {
+			"type": "boolean",
+			"default": true,
+			"description": "Disable non-error output"
+		},
+		"version": {
+			"type": "string",
+			"default": "",
+			"description": "Install a specific version"
+		}
+	}
+}
