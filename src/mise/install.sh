@@ -5,13 +5,15 @@ echo "Activate feature 'mise'"
 
 export MISE_DEBUG=$([[ $DEBUG ]] && echo 1 || echo 0)
 export MISE_QUIET=&([[ $QUIET ]] && echo 1 || echo 0)
-export MISE_INSTALL_PATH="${INSTALL_PATH/\~/$_REMOTE_USER_HOME}"
-
+export MISE_INSTALL_PATH="/usr/local/bin/mise"
 if [ -n $VERSION ]; then
-	curl https://mise.run | MISE_VERSION=$VERSION sh
-else
-	curl https://mise.run | sh
+	export MISE_VERSION=$VERSION
 fi
 
-echo 'eval "$(MISE_INSTALL_PATH activate bash)"' >> $_CONTAINER_USER_HOME/.bashrc
-echo 'eval "$(MISE_INSTALL_PATH activate bash --shims)"' >> $_CONTAINER_USER_HOME/.profile
+apt update && apt upgrade -y
+apt install curl -y
+
+curl https://mise.run | sh
+
+echo 'eval "$(MISE_INSTALL_PATH activate bash)"' >> /etc/bash.bashrc
+echo 'eval "$(MISE_INSTALL_PATH activate bash --shims)"' >> /etc/profile

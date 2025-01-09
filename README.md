@@ -19,7 +19,6 @@ The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot v
 		"ghcr.io/jmlow/devcontainer-features/mise:1": {
 			"debug": false,
 			"quiet": true,
-			"install_path": "~/.local/bin/mise",
 			"version": ""
 		}
 	}

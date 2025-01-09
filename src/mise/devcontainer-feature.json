@@ -14,11 +14,6 @@
 			"default": true,
 			"description": "Disable non-error output"
 		},
-		"install_path": {
-			"type": "string",
-			"default": "~/.local/bin/mise",
-			"description": "Change the binary path (default: '~/.local/bin/mise')"
-		},
 		"version": {
 			"type": "string",
 			"default": "",
