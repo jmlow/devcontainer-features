@@ -24,6 +24,5 @@
 			"default": "",
 			"description": "Install a specific version"
 		}
-	},
-	"installsAfter": ["ghcr.io/devcontainers/features/common-utils"]
+	}
 }
