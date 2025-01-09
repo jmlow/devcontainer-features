@@ -11,10 +11,12 @@
 				]
 			},
 			"extensions": [
-				"mads-hartmann.bash-ide-vscode",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
 				"EditorConfig.EditorConfig",
 				"esbenp.prettier-vscode",
-				"vscodevim.vim"
+				"github.vscode-github-actions",
+				"mads-hartmann.bash-ide-vscode"
 			]
 		}
 	},
