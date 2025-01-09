@@ -2,7 +2,9 @@
 	"version": {
 		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 		"features": {
-			"mise": {}
+			"mise": {
+				"version": "v2024.5.17"
+			}
 		}
 	}
 }
