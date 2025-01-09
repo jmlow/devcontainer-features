@@ -6,7 +6,7 @@
 
 ## Example Contents
 
-This repository contains a _collection_ of two Features - `mise` and `oh-my-posh`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
+This repository contains a _collection_ of two Features - `curl` and `mise`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
 
 ### `mise`
 
@@ -31,10 +31,10 @@ Similar to the [`devcontainers/features`](https://github.com/devcontainers/featu
 
 ```
 ├── src
-│   ├── mise
+│   ├── curl
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-│   ├── oh-my-posh
+│   ├── mise
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
 |   ├── ...
@@ -49,19 +49,28 @@ An [implementing tool](https://containers.dev/supporting#tools) will composite [
 
 All available options for a Feature should be declared in the `devcontainer-feature.json`. The syntax for the `options` property can be found in the [devcontainer Feature json properties reference](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
 
-For example, the `color` feature provides an enum of three possible options (`red`, `gold`, `green`). If no option is provided in a user's `devcontainer.json`, the value is set to "red".
+For example, the `mise` feature provides several boolean and string options:
 
 ```jsonc
 {
 	// ...
 	"options": {
-		"favorite": {
+		"debug": {
+			"type": "boolean",
+			"default": false,
+			"description": "Enable debug logging"
+		},
+		"quiet": {
+			"type": "boolean",
+			"default": true,
+			"description": "Disable non-error output"
+		},
+		"version": {
 			"type": "string",
-			"enum": ["red", "gold", "green"],
-			"default": "red",
-			"description": "Choose your favorite color."
+			"default": "",
+			"description": "Install a specific version"
 		}
-	}
+	},
 }
 ```
 
@@ -70,8 +79,10 @@ Options are exported as Feature-scoped environment variables. The option name is
 ```bash
 #!/bin/bash
 
-echo "Activating feature 'color'"
-echo "The provided favorite color is: ${FAVORITE}"
+echo "Activating feature 'mise'"
+if [ -n $VERSION ]; then
+	export MISE_VERSION=$VERSION
+fi
 
 ...
 ```
