@@ -10,9 +10,6 @@ if [ -n $VERSION ]; then
 	export MISE_VERSION=$VERSION
 fi
 
-apt update && apt upgrade -y
-apt install curl -y
-
 curl https://mise.run | sh
 
 echo 'eval "$(MISE_INSTALL_PATH activate bash)"' >> /etc/bash.bashrc
