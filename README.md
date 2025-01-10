@@ -6,7 +6,7 @@
 
 ## Example Contents
 
-This repository contains a _collection_ of two Features - `curl` and `mise`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
+This repository contains a _collection_ of four Features - `curl`, `unzip`, `mise`, and `oh-my-posh`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
 
 ### `curl`
 
@@ -17,6 +17,19 @@ The `curl` feature installs [curl](https://curl.se/) inside the dev container.
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
+	}
+}
+```
+
+### `unzip`
+
+The `unzip` feature installs unzip inside the dev container.
+
+```jsonc
+{
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/jmlow/devcontainer-features/unzip:0": {}
 	}
 }
 ```
@@ -38,6 +51,21 @@ The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot v
 }
 ```
 
+### `oh-my-posh`
+
+The `oh-my-posh` feature installs [oh-my-posh](https://ohmyposh.dev/), a cross-shell prompt theme engine, inside the dev container.
+
+```jsonc
+{
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/jmlow/devcontainer-features/oh-my-posh:0": {
+			"config": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/atomic.omp.json"
+		}
+	}
+}
+```
+
 ## Repo and Feature Structure
 
 Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder. Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`.
@@ -47,7 +75,13 @@ Similar to the [`devcontainers/features`](https://github.com/devcontainers/featu
 │   ├── curl
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-│   ├── mise
+│   ├── unzip
+│   │   ├── devcontainer-feature.json
+│   │   └── install.sh
+|   ├── mise
+│   │   ├── devcontainer-feature.json
+│   │   └── install.sh
+|   ├── oh-my-posh
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
 |   ├── ...
