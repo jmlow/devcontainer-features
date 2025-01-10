@@ -14,7 +14,9 @@ jobs:
       matrix:
         features:
           - curl
+          - unzip
           - mise
+          - oh-my-posh
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -35,7 +37,9 @@ jobs:
       matrix:
         features:
           - curl
+          - unzip
           - mise
+          - oh-my-posh
     steps:
       - uses: actions/checkout@v4
 
