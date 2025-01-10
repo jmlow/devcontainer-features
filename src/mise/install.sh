@@ -12,5 +12,5 @@ fi
 
 curl https://mise.run | sh
 
-echo 'eval "$(MISE_INSTALL_PATH activate bash)"' >> /etc/bash.bashrc
-echo 'eval "$(MISE_INSTALL_PATH activate bash --shims)"' >> /etc/profile
+echo "eval \"$(MISE_INSTALL_PATH activate bash --shims)\"" >> /etc/profile
+echo "eval \"$(MISE_INSTALL_PATH activate bash)\"" >> /etc/bash.bashrc
