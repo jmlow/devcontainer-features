@@ -6,7 +6,7 @@
 	"options": {
 		"config": {
 			"type": "string",
-			"default": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/atomic.omp.json",
+			"default": "",
 			"description": "Path/URL to config/theme file for oh-my-posh, defaults to atomic theme on GitHub"
 		}
 	},
