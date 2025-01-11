@@ -15,8 +15,6 @@ A mise.jdx.dev feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| debug | Enable debug logging | boolean | false |
-| quiet | Disable non-error output | boolean | true |
 | version | Install a specific version | string | - |
 
 
