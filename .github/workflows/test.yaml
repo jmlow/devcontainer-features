@@ -17,6 +17,7 @@ jobs:
           - unzip
           - mise
           - oh-my-posh
+          - sudo
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -40,6 +41,7 @@ jobs:
           - unzip
           - mise
           - oh-my-posh
+          - sudo
     steps:
       - uses: actions/checkout@v4
 
