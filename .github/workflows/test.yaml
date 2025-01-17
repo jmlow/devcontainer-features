@@ -15,9 +15,10 @@ jobs:
         features:
           - curl
           - unzip
+          - sudo
           - mise
           - oh-my-posh
-          - sudo
+          - heroku
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -39,9 +40,10 @@ jobs:
         features:
           - curl
           - unzip
+          - sudo
           - mise
           - oh-my-posh
-          - sudo
+          - heroku
     steps:
       - uses: actions/checkout@v4
 
