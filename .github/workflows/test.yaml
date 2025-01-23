@@ -19,6 +19,7 @@ jobs:
           - mise
           - oh-my-posh
           - heroku
+          - sf
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -44,6 +45,7 @@ jobs:
           - mise
           - oh-my-posh
           - heroku
+          - sf
     steps:
       - uses: actions/checkout@v4
 
