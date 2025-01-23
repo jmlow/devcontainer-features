@@ -3,7 +3,14 @@
 	"id": "sf",
 	"version": "0.1.0",
 	"description": "A sf CLI feature",
+	"options": {
+		"sf_dir": {
+			"type": "string",
+			"default": "~/sdk/sf",
+			"description": "The path to the sf CLI directory; defaults to '~/sdk/sf'"
+		}
+	},
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/mise:0": {}
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
 	}
 }
