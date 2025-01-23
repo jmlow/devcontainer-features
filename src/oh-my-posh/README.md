@@ -15,7 +15,7 @@ An oh-my-posh feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| config | Path/URL to config/theme file for oh-my-posh, defaults to atomic theme on GitHub | string | - |
+| config | Path/URL to config/theme file for oh-my-posh | string | - |
 
 
 
