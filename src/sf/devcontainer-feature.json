@@ -1,0 +1,9 @@
+{
+	"name": "sf",
+	"id": "sf",
+	"version": "0.1.0",
+	"description": "A sf CLI feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/mise:0": {}
+	}
+}
