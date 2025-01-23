@@ -1,0 +1,18 @@
+{
+	"default": {
+		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"features": {
+			"sf": {}
+		},
+		"remoteUser": "vscode"
+	},
+	"directory": {
+		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"features": {
+			"sf": {
+				"sf_dir": "~/cli/sf"
+			}
+		},
+		"remoteUser": "vscode"
+	}
+}
