@@ -44,6 +44,7 @@ jobs:
           - mise
           - oh-my-posh
           - heroku
+          - sf
     steps:
       - uses: actions/checkout@v4
 
