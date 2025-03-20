@@ -21,7 +21,6 @@ jobs:
           - oh-my-posh
           - heroku
         baseImage:
-          - debian:latest
           - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
