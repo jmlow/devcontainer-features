@@ -1,0 +1,9 @@
+{
+	"name": "helix",
+	"id": "helix",
+	"version": "0.1.0",
+	"description": "A helix editor feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/software-properties-common:0": {}
+	}
+}
