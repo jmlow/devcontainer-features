@@ -15,6 +15,7 @@ jobs:
         features:
           - curl
           - unzip
+          - software-properties-common
           - sudo
           - mise
           - oh-my-posh
@@ -40,6 +41,7 @@ jobs:
         features:
           - curl
           - unzip
+          - software-properties-common
           - sudo
           - mise
           - oh-my-posh
