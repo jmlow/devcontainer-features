@@ -17,6 +17,7 @@ jobs:
           - unzip
           - sudo
           - mise
+          - helix
           - oh-my-posh
           - heroku
         baseImage:
@@ -42,6 +43,7 @@ jobs:
           - unzip
           - sudo
           - mise
+          - helix
           - oh-my-posh
           - heroku
           - sf
