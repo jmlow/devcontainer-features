@@ -11,11 +11,7 @@ An oh-my-posh feature
 }
 ```
 
-## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| config | Path/URL to config/theme file for oh-my-posh | string | - |
 
 
 
