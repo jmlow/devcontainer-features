@@ -19,6 +19,7 @@ jobs:
           - sudo
           - mise
           - helix
+          - starship
           - oh-my-posh
           - heroku
         baseImage:
@@ -45,6 +46,7 @@ jobs:
           - sudo
           - mise
           - helix
+          - starship
           - oh-my-posh
           - heroku
           - sf
