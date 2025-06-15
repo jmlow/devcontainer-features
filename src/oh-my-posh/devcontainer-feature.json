@@ -1,15 +1,8 @@
 {
 	"name": "oh-my-posh",
 	"id": "oh-my-posh",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "An oh-my-posh feature",
-	"options": {
-		"config": {
-			"type": "string",
-			"default": "",
-			"description": "Path/URL to config/theme file for oh-my-posh"
-		}
-	},
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
 		"ghcr.io/jmlow/devcontainer-features/unzip:0": {}
