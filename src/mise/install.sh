@@ -11,6 +11,3 @@ if [ -n $VERSION ]; then
 fi
 
 curl https://mise.run | sh
-
-echo 'eval "$(/usr/local/bin/mise activate bash)"' >> /etc/profile
-echo 'eval "$(/usr/local/bin/mise activate bash)"' >> /etc/bash.bashrc
