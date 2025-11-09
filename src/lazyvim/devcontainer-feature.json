@@ -1,0 +1,26 @@
+{
+	"name": "lazyvim",
+	"id": "lazyvim",
+	"version": "0.1.0",
+	"description": "A lazyvim feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
+		"ghcr.io/jmlow/devcontainer-features/wget:0": {},
+		"ghcr.io/jmlow/devcontainer-features/unzip:0": {},
+		"ghcr.io/jmlow/devcontainer-features/ripgrep:0": {},
+		"ghcr.io/jmlow/devcontainer-features/fd-find:0": {},
+		"ghcr.io/jmlow/devcontainer-features/fzf:0": {},
+		"ghcr.io/jmlow/devcontainer-features/lsof:0": {},
+		"ghcr.io/jmlow/devcontainer-features/tmux:0": {},
+		"ghcr.io/jmlow/devcontainer-features/lazygit:0": {},
+		"ghcr.io/jmlow/devcontainer-features/mise:0": {},
+		"ghcr.io/jmlow/devcontainer-features/pynvim:0": {}
+	},
+	"updateContentCommand": [
+		"mise use python",
+		"mise use node",
+		"mise use rust",
+		"cargo install tree-sitter-cli zellij",
+		"npm i -g neovim @github/copilot"
+	]
+}

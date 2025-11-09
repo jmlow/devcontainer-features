@@ -1,0 +1,9 @@
+{
+	"name": "specify",
+	"id": "specify",
+	"version": "0.1.0",
+	"description": "A specify CLI feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/uv:0": {}
+	}
+}

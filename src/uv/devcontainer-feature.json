@@ -1,0 +1,12 @@
+{
+	"name": "uv",
+	"id": "uv",
+	"version": "0.1.0",
+	"description": "A uv CLI feature",
+	"containerEnv": {
+		"UV_INSTALL_DIR": "/usr/local/bin"
+	},
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
+	}
+}
