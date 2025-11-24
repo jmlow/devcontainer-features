@@ -17,6 +17,7 @@
 				"eamodio.gitlens",
 				"EditorConfig.EditorConfig",
 				"github.vscode-github-actions",
+				"hverlin.mise-vscode",
 				"mads-hartmann.bash-ide-vscode"
 			]
 		}

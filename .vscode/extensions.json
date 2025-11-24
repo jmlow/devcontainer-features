@@ -6,5 +6,6 @@
 		"github.copilot",
 		"github.copilot-chat",
 		"github.vscode-github-actions",
+		"hverlin.mise-vscode",
 	]
 }

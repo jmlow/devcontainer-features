@@ -1,7 +1,7 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "A lazyvim feature",
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
@@ -13,7 +13,7 @@
 		"ghcr.io/jmlow/devcontainer-features/lsof:0": {},
 		"ghcr.io/jmlow/devcontainer-features/tmux:0": {},
 		"ghcr.io/jmlow/devcontainer-features/lazygit:0": {},
-		"ghcr.io/jmlow/devcontainer-features/mise:0": {},
+		"ghcr.io/devcontainers-extra/features/mise:latest": {},
 		"ghcr.io/jmlow/devcontainer-features/pynvim:0": {}
 	},
 	"updateContentCommand": [

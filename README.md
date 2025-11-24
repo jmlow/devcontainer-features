@@ -6,7 +6,7 @@
 
 ## Example Contents
 
-This repository contains a _collection_ of four Features - `curl`, `unzip`, `mise`, and `oh-my-posh`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
+This repository contains a _collection_ of four Features - `curl`, `unzip`, `lazyvim`, and `oh-my-posh`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
 
 ### `curl`
 
@@ -30,23 +30,6 @@ The `unzip` feature installs unzip inside the dev container.
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/jmlow/devcontainer-features/unzip:0": {}
-	}
-}
-```
-
-### `mise`
-
-The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot version manager, inside the dev container.
-
-```jsonc
-{
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"features": {
-		"ghcr.io/jmlow/devcontainer-features/mise:0": {
-			"debug": false,
-			"quiet": true,
-			"version": ""
-		}
 	}
 }
 ```
@@ -78,10 +61,10 @@ Similar to the [`devcontainers/features`](https://github.com/devcontainers/featu
 │   ├── unzip
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-|   ├── mise
+│   ├── lazyvim
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-|   ├── oh-my-posh
+│   ├── oh-my-posh
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
 |   ├── ...
@@ -155,8 +138,8 @@ _Allow GitHub Actions to create and approve pull requests_ should be enabled in 
 By default, each Feature will be prefixed with the `<owner/<repo>` namespace. For example, the two Features in this repository can be referenced in a `devcontainer.json` with:
 
 ```
-ghcr.io/jmlow/devcontainer-features/mise:1
-ghcr.io/jmlow/devcontainer-features/oh-my-posh:1
+ghcr.io/jmlow/devcontainer-features/lazyvim:1
+ghcr.io/jmlow/devcontainer-features/specify:1
 ```
 
 The provided GitHub Action will also publish a third "metadata" package with just the namespace, eg: `ghcr.io/jmlow/devcontainer-features`. This contains information useful for tools aiding in Feature discovery.
