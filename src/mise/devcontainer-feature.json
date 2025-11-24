@@ -1,7 +1,7 @@
 {
 	"name": "mise-en-place",
 	"id": "mise",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "A mise.jdx.dev feature",
 	"options": {
 		"version": {
@@ -13,6 +13,6 @@
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
 	},
-	"updateContentCommand": "mise use",
+	"updateContentCommand": "mise use &> /dev/null || true",
 	"postStartCommand": "mise activate"
 }

@@ -1,14 +1,14 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A lazyvim feature",
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
 		"ghcr.io/jmlow/devcontainer-features/wget:0": {},
 		"ghcr.io/jmlow/devcontainer-features/unzip:0": {},
 		"ghcr.io/jmlow/devcontainer-features/ripgrep:0": {},
-		"ghcr.io/jmlow/devcontainer-features/fd-find:0": {},
+		"ghcr.io/jmlow/devcontainer-features/fdfind:0": {},
 		"ghcr.io/jmlow/devcontainer-features/fzf:0": {},
 		"ghcr.io/jmlow/devcontainer-features/lsof:0": {},
 		"ghcr.io/jmlow/devcontainer-features/tmux:0": {},
