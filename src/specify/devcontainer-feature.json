@@ -4,6 +4,7 @@
 	"version": "0.1.0",
 	"description": "A specify CLI feature",
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/uv:0": {}
+		"ghcr.io/jmlow/devcontainer-features/uv:0": {},
+		"ghcr.io/devcontainers/features/git:latest": {}
 	}
 }

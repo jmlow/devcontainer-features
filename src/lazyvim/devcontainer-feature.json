@@ -1,7 +1,7 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A lazyvim feature",
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
@@ -17,9 +17,9 @@
 		"ghcr.io/jmlow/devcontainer-features/pynvim:0": {}
 	},
 	"updateContentCommand": [
-		"mise use python",
-		"mise use node",
-		"mise use rust",
+		"mise use --env lazyvim python@latest",
+		"mise use --env lazyvim node@lts",
+		"mise use --env lazyvim rust@latest",
 		"cargo install tree-sitter-cli zellij",
 		"npm i -g neovim @github/copilot"
 	]
