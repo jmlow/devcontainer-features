@@ -5,17 +5,19 @@
 			"settings": {
 				"json.schemas": [
 					{
-						"fileMatch": ["*/devcontainer-feature.json"],
+						"fileMatch": [
+							"*/devcontainer-feature.json"
+						],
 						"url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
 					}
 				]
 			},
 			"extensions": [
-				"dbaeumer.vscode-eslint",
+				"biomejs.biome",
 				"eamodio.gitlens",
 				"EditorConfig.EditorConfig",
-				"esbenp.prettier-vscode",
 				"github.vscode-github-actions",
+				"hverlin.mise-vscode",
 				"mads-hartmann.bash-ide-vscode"
 			]
 		}

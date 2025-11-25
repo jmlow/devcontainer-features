@@ -14,19 +14,18 @@ jobs:
       matrix:
         features:
           - curl
-          - unzip
-          - software-properties-common
-          - sudo
-          - mise
-          - helix
-          - starship
-          - oh-my-posh
           - heroku
+          - mise
+          - oh-my-posh
+          - software-properties-common
+          - starship
+          - sudo
+          - unzip
         baseImage:
           - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
@@ -40,18 +39,10 @@ jobs:
     strategy:
       matrix:
         features:
-          - curl
-          - unzip
-          - software-properties-common
-          - sudo
           - mise
-          - helix
-          - starship
-          - oh-my-posh
-          - heroku
           - sf
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
@@ -63,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
