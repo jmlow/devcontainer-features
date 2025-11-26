@@ -1,0 +1,15 @@
+{
+	"name": "uv",
+	"id": "uv",
+	"version": "0.1.0",
+	"description": "A uv feature",
+	"containerEnv": {
+		"UV_INSTALL_DIR": "/usr/local/bin",
+		"UV_TOOL_DIR": "/usr/local/share/uv/tools",
+		"UV_TOOL_BIN_DIR": "/usr/local/bin"
+	},
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
+		"ghcr.io/jmlow/devcontainer-features/mise:0": {}
+	}
+}
