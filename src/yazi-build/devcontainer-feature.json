@@ -1,0 +1,10 @@
+{
+	"name": "yazi-build",
+	"id": "yazi-build",
+	"version": "0.1.0",
+	"description": "A yazi-build feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/cargo-binstall:0": {},
+		"ghcr.io/jmlow/devcontainer-features/zoxide:0": {}
+	}
+}
