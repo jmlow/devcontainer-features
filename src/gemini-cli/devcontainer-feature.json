@@ -1,0 +1,9 @@
+{
+	"name": "gemini-cli",
+	"id": "gemini-cli",
+	"version": "0.1.0",
+	"description": "A gemini-cli feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/nvm:0": {}
+	}
+}

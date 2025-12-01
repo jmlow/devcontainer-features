@@ -1,0 +1,9 @@
+{
+	"name": "claude-code",
+	"id": "claude-code",
+	"version": "0.1.0",
+	"description": "A claude-code feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/nvm:0": {}
+	}
+}
