@@ -1,0 +1,6 @@
+{
+	"name": "build-essential",
+	"id": "build-essential",
+	"version": "0.1.0",
+	"description": "A build-essential feature"
+}

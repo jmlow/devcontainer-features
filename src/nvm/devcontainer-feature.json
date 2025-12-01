@@ -1,0 +1,12 @@
+{
+	"name": "nvm",
+	"id": "nvm",
+	"version": "0.1.0",
+	"description": "An nvm feature",
+	"containerEnv": {
+		"NVM_DIR": "/usr/local/nvm"
+	},
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
+	}
+}
