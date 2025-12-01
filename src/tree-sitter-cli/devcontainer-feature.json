@@ -1,0 +1,9 @@
+{
+	"name": "tree-sitter-cli",
+	"id": "tree-sitter-cli",
+	"version": "0.1.0",
+	"description": "A tree-sitter-cli feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/cargo-binstall:0": {}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "lazygit",
+	"id": "lazygit",
+	"version": "0.1.0",
+	"description": "A lazygit feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
+		"ghcr.io/devcontainers/features/git:latest": {},
+		"ghcr.io/devcontainers/features/github-cli:latest": {}
+	}
+}
