@@ -13,14 +13,39 @@ jobs:
     strategy:
       matrix:
         features:
+          - build-essential
+          - cargo-binstall
+          - claude-code
+          - copilot
           - curl
+          - fdfind
+          - fzf
+          - gemini-cli
           - heroku
+          - lazygit
+          - lazyvim
+          - libreadline-dev
+          - lsof
+          - luarocks
           - mise
+          - nvm
           - oh-my-posh
+          - pynvim
+          - python3
+          - ripgrep
+          - rustup
           - software-properties-common
+          - specify
           - starship
           - sudo
+          - tmux
+          - tree-sitter-cli
           - unzip
+          - uv
+          - wget
+          - yazi-build
+          - zellij
+          - zoxide
         baseImage:
           - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
