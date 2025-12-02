@@ -1,7 +1,7 @@
 {
 	"name": "oh-my-posh",
 	"id": "oh-my-posh",
-	"version": "0.1.2",
+	"version": "0.1.0",
 	"description": "An oh-my-posh feature",
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {},

@@ -1,7 +1,7 @@
 {
 	"name": "mise-en-place",
 	"id": "mise",
-	"version": "0.1.4",
+	"version": "0.1.0",
 	"description": "A mise.jdx.dev feature",
 	"options": {
 		"version": {

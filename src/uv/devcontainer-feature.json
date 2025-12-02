@@ -1,7 +1,7 @@
 {
 	"name": "uv",
 	"id": "uv",
-	"version": "0.1.1",
+	"version": "0.1.0",
 	"description": "A uv feature",
 	"containerEnv": {
 		"UV_INSTALL_DIR": "/usr/local/bin",
