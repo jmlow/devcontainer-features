@@ -1,6 +1,9 @@
 {
 	"name": "fzf",
 	"id": "fzf",
-	"version": "0.1.0",
-	"description": "An fzf feature"
+	"version": "0.1.1",
+	"description": "An fzf feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }

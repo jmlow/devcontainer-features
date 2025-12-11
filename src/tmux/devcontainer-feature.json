@@ -1,6 +1,9 @@
 {
 	"name": "tmux",
 	"id": "tmux",
-	"version": "0.1.0",
-	"description": "A tmux feature"
+	"version": "0.1.1",
+	"description": "A tmux feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }

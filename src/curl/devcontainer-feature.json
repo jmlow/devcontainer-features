@@ -1,6 +1,9 @@
 {
 	"name": "curl",
 	"id": "curl",
-	"version": "0.1.0",
-	"description": "A curl feature"
+	"version": "0.1.1",
+	"description": "A curl feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }

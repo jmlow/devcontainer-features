@@ -1,6 +1,9 @@
 {
 	"name": "libreadline-dev",
 	"id": "libreadline-dev",
-	"version": "0.1.0",
-	"description": "A libreadline-dev feature"
+	"version": "0.1.1",
+	"description": "A libreadline-dev feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }

@@ -1,6 +1,9 @@
 {
 	"name": "software-properties-common",
 	"id": "software-properties-common",
-	"version": "0.1.0",
-	"description": "A software-properties-common feature"
+	"version": "0.1.1",
+	"description": "A software-properties-common feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }

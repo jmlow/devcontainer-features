@@ -1,6 +1,9 @@
 {
 	"name": "unzip",
 	"id": "unzip",
-	"version": "0.1.0",
-	"description": "An unzip feature"
+	"version": "0.1.1",
+	"description": "An unzip feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }
