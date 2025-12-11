@@ -1,9 +1,10 @@
 {
 	"name": "luarocks",
 	"id": "luarocks",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A luarocks feature",
 	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {},
 		"ghcr.io/jmlow/devcontainer-features/libreadline-dev:0": {}
 	}
 }

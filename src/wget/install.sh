@@ -3,4 +3,4 @@ set -e
 
 echo "Activate feature 'wget'"
 
-apt update && apt install -y wget
+apt install -y wget

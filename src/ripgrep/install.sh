@@ -3,4 +3,4 @@ set -e
 
 echo "Activate feature 'ripgrep'"
 
-apt update && apt install -y ripgrep
+apt install -y ripgrep

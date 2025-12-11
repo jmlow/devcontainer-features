@@ -1,6 +1,9 @@
 {
 	"name": "ripgrep",
 	"id": "ripgrep",
-	"version": "0.1.0",
-	"description": "A ripgrep feature"
+	"version": "0.1.1",
+	"description": "A ripgrep feature",
+	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+	}
 }

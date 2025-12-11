@@ -3,4 +3,4 @@ set -e
 
 echo "Activate feature 'fzf'"
 
-apt update && apt install -y fzf
+apt install -y fzf

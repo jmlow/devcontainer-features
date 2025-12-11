@@ -1,9 +1,10 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A lazyvim feature",
 	"dependsOn": {
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {},
 		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
 		"ghcr.io/jmlow/devcontainer-features/wget:0": {},
 		"ghcr.io/jmlow/devcontainer-features/unzip:0": {},

@@ -3,4 +3,4 @@ set -e
 
 echo "Activate feature 'tmux'"
 
-apt update && apt install -y tmux
+apt install -y tmux
