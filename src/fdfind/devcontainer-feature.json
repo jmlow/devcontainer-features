@@ -1,9 +1,9 @@
 {
 	"name": "fdfind",
 	"id": "fdfind",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "An fdfind feature",
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {}
 	}
 }
