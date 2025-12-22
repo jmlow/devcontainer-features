@@ -1,12 +1,10 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A lazyvim feature",
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {},
-		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
-		"ghcr.io/jmlow/devcontainer-features/wget:0": {},
+		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/jmlow/devcontainer-features/unzip:0": {},
 		"ghcr.io/jmlow/devcontainer-features/ripgrep:0": {},
 		"ghcr.io/jmlow/devcontainer-features/fdfind:0": {},
@@ -14,7 +12,6 @@
 		"ghcr.io/jmlow/devcontainer-features/lsof:0": {},
 		"ghcr.io/jmlow/devcontainer-features/tmux:0": {},
 		"ghcr.io/jmlow/devcontainer-features/zellij:0": {},
-		"ghcr.io/devcontainers/features/git:latest": {},
 		"ghcr.io/jmlow/devcontainer-features/lazygit:0": {},
 		"ghcr.io/jmlow/devcontainer-features/tree-sitter-cli:0": {},
 		"ghcr.io/jmlow/devcontainer-features/luarocks:0": {},

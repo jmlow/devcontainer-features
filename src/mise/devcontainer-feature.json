@@ -1,7 +1,7 @@
 {
 	"name": "mise-en-place",
 	"id": "mise",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A mise.jdx.dev feature",
 	"options": {
 		"version": {
@@ -11,6 +11,6 @@
 		}
 	},
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {}
 	}
 }

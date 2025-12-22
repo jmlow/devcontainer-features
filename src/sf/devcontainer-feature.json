@@ -1,7 +1,7 @@
 {
 	"name": "sf",
 	"id": "sf",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A sf CLI feature",
 	"options": {
 		"sf_dir": {
@@ -11,6 +11,6 @@
 		}
 	},
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {}
 	}
 }

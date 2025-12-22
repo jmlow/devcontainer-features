@@ -1,7 +1,7 @@
 {
 	"name": "rustup",
 	"id": "rustup",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "An rustup feature",
 	"containerEnv": {
 		"CARGO_HOME": "/usr/local/cargo",
@@ -9,7 +9,7 @@
 		"PATH": "${CARGO_HOME}/bin:${PATH}"
 	},
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/curl:0": {},
+		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/jmlow/devcontainer-features/build-essential:0": {}
 	}
 }
