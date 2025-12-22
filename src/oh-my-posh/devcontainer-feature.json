@@ -1,10 +1,9 @@
 {
 	"name": "oh-my-posh",
 	"id": "oh-my-posh",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "An oh-my-posh feature",
 	"dependsOn": {
-		"ghcr.io/devcontainers/features/common-utils:2": {},
-		"ghcr.io/jmlow/devcontainer-features/unzip:0": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {}
 	}
 }

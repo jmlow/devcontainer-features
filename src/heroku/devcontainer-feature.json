@@ -1,10 +1,9 @@
 {
 	"name": "heroku",
 	"id": "heroku",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A heroku CLI feature",
 	"dependsOn": {
-		"ghcr.io/devcontainers/features/common-utils:2": {},
-		"ghcr.io/jmlow/devcontainer-features/sudo:0": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {}
 	}
 }
