@@ -1,9 +1,0 @@
-{
-	"name": "wget",
-	"id": "wget",
-	"version": "0.1.1",
-	"description": "A wget feature",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
-	}
-}
