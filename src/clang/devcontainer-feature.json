@@ -1,9 +1,9 @@
 {
 	"name": "clang",
 	"id": "clang",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "A clang feature",
 	"dependsOn": {
-		"ghcr.io/devcontainers/features/common-utils:2": {}
+		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
 	}
 }

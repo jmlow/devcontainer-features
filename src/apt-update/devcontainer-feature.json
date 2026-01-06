@@ -1,0 +1,9 @@
+{
+	"name": "apt-update",
+	"id": "apt-update",
+	"version": "0.1.0",
+	"description": "Runs apt update",
+	"dependsOn": {
+		"ghcr.io/devcontainers/features/common-utils:2": {}
+	}
+}
