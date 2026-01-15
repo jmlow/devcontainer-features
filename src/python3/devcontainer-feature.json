@@ -1,9 +1,0 @@
-{
-	"name": "python3",
-	"id": "python3",
-	"version": "0.1.3",
-	"description": "A python3 feature",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
-	}
-}

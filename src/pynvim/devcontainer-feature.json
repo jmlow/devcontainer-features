@@ -1,9 +1,9 @@
 {
 	"name": "pynvim",
 	"id": "pynvim",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A pynvim CLI feature",
 	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/uv:0": {}
+		"ghcr.io/jmlow/devcontainer-features/python:0": {}
 	}
 }

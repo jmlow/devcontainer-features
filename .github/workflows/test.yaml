@@ -13,13 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - build-essential
-          - cargo-binstall
-          - claude-code
-          - copilot
-          - fdfind
-          - fzf
-          - gemini-cli
+          - ai
           - heroku
           - lazygit
           - lazyvim
@@ -29,20 +23,16 @@ jobs:
           - nvm
           - oh-my-posh
           - pynvim
-          - python3
-          - ripgrep
-          - rustup
+          - python
+          - rust
           - specify
           - starship
-          - tmux
           - tree-sitter-cli
-          - uv
           - yazi-build
           - zellij
           - zoxide
         baseImage:
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - ghcr.io/jmlow/devcontainer-features/base:latest
     steps:
       - uses: actions/checkout@v5
 

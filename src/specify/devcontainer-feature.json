@@ -1,10 +1,10 @@
 {
 	"name": "specify",
 	"id": "specify",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A specify CLI feature",
 	"dependsOn": {
 		"ghcr.io/devcontainers/features/common-utils:2": {},
-		"ghcr.io/jmlow/devcontainer-features/uv:0": {}
+		"ghcr.io/jmlow/devcontainer-features/python:0": {}
 	}
 }

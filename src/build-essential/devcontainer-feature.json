@@ -1,9 +1,0 @@
-{
-	"name": "build-essential",
-	"id": "build-essential",
-	"version": "0.1.3",
-	"description": "A build-essential feature",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {}
-	}
-}

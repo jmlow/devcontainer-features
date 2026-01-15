@@ -1,9 +1,0 @@
-{
-	"name": "cargo-binstall",
-	"id": "cargo-binstall",
-	"version": "0.1.0",
-	"description": "A cargo-binstall feature",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/rustup:0": {}
-	}
-}
