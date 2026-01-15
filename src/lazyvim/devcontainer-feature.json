@@ -1,7 +1,7 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "A lazyvim feature",
 	"dependsOn": {
 		"ghcr.io/jmlow/devcontainer-features/apt-update:0": {},
@@ -9,7 +9,6 @@
 		"ghcr.io/jmlow/devcontainer-features/zellij:0": {},
 		"ghcr.io/jmlow/devcontainer-features/lazygit:0": {},
 		"ghcr.io/jmlow/devcontainer-features/tree-sitter-cli:0": {},
-		"ghcr.io/jmlow/devcontainer-features/luarocks:0": {},
 		"ghcr.io/jmlow/devcontainer-features/nvm:0": {},
 		"ghcr.io/jmlow/devcontainer-features/pynvim:0": {}
 	}

@@ -8,8 +8,9 @@ This directory contains custom Docker base images that pre-install commonly used
 
 A general-purpose base image with pre-installed tools including:
 
-- **Build toolchains**: build-essential, clang, libclang-dev
+- **Build toolchains**: build-essential, clang, libclang-dev, libreadline-dev
 - **Search/CLI tools**: fd-find, fzf, ripgrep, tmux
+- **Language tools**: luarocks
 
 ## Usage
 

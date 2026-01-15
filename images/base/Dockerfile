@@ -19,11 +19,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Update package lists
 RUN apt-get update
 
-# Build toolchains
+# Build toolchains and development libraries
 RUN apt-get install -y --no-install-recommends \
 	build-essential \
 	clang \
-	libclang-dev
+	libclang-dev \
+	libreadline-dev \
+	luarocks
 
 # CLI tools
 RUN apt-get install -y --no-install-recommends \
