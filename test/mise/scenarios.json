@@ -1,6 +1,6 @@
 {
 	"version": {
-		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"image": "ghcr.io/jmlow/devcontainer-features/base:latest",
 		"features": {
 			"mise": {
 				"version": "v2024.5.17"

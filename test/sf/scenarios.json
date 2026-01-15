@@ -1,13 +1,13 @@
 {
 	"default": {
-		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"image": "ghcr.io/jmlow/devcontainer-features/base:latest",
 		"features": {
 			"sf": {}
 		},
 		"remoteUser": "vscode"
 	},
 	"directory": {
-		"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+		"image": "ghcr.io/jmlow/devcontainer-features/base:latest",
 		"features": {
 			"sf": {
 				"sf_dir": "~/cli/sf"
