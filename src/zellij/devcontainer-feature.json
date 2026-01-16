@@ -1,9 +1,0 @@
-{
-	"name": "zellij",
-	"id": "zellij",
-	"version": "0.1.1",
-	"description": "A zellij feature",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/rust:0": {}
-	}
-}

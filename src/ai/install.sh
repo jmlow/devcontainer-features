@@ -7,6 +7,4 @@ echo "Activate feature 'ai'"
 . "$NVM_DIR/nvm.sh"
 
 # Install AI coding assistant CLIs
-npm i -g @anthropic-ai/claude-code
-npm i -g @github/copilot
-npm i -g @google/gemini-cli
+npm i -g @anthropic-ai/claude-code @github/copilot @google/gemini-cli

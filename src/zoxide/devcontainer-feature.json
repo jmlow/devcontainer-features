@@ -1,9 +1,0 @@
-{
-	"name": "zoxide",
-	"id": "zoxide",
-	"version": "0.1.2",
-	"description": "A zoxide feature",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/rust:0": {}
-	}
-}

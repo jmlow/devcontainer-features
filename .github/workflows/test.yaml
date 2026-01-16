@@ -22,13 +22,9 @@ jobs:
           - oh-my-posh
           - pynvim
           - python
-          - rust
           - specify
           - starship
-          - tree-sitter-cli
           - yazi-build
-          - zellij
-          - zoxide
         baseImage:
           - ghcr.io/jmlow/devcontainer-features/base:latest
     steps:
