@@ -20,11 +20,9 @@ jobs:
           - mise
           - nvm
           - oh-my-posh
-          - pynvim
           - python
           - specify
           - starship
-          - yazi-build
         baseImage:
           - ghcr.io/jmlow/devcontainer-features/base:latest
     steps:

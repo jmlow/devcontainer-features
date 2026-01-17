@@ -1,12 +1,12 @@
 {
 	"name": "lazyvim",
 	"id": "lazyvim",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"description": "A lazyvim feature",
 	"dependsOn": {
 		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/jmlow/devcontainer-features/lazygit:0": {},
 		"ghcr.io/jmlow/devcontainer-features/nvm:0": {},
-		"ghcr.io/jmlow/devcontainer-features/pynvim:0": {}
+		"ghcr.io/jmlow/devcontainer-features/python:0": {}
 	}
 }

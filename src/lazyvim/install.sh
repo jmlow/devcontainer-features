@@ -5,7 +5,7 @@ echo "Activate feature 'lazyvim'"
 
 apt update && apt install -y neovim
 
-# Source nvm, node, & npm (installed by nvm feature)
+# Install neovim provider packages
 . "$NVM_DIR/nvm.sh"
-
 npm i -g neovim
+uv tool install --upgrade pynvim
