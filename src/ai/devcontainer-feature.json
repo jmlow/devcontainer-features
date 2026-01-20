@@ -1,9 +1,0 @@
-{
-	"name": "ai",
-	"id": "ai",
-	"version": "0.1.1",
-	"description": "Installs AI coding assistant CLIs (Claude Code, GitHub Copilot, Gemini CLI)",
-	"dependsOn": {
-		"ghcr.io/jmlow/devcontainer-features/nvm:0": {}
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"name": "starship",
-	"id": "starship",
-	"version": "0.1.1",
-	"description": "A starship feature",
-	"dependsOn": {
-		"ghcr.io/devcontainers/features/common-utils:2": {}
-	}
-}

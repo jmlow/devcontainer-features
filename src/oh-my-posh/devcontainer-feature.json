@@ -1,9 +1,0 @@
-{
-	"name": "oh-my-posh",
-	"id": "oh-my-posh",
-	"version": "0.1.2",
-	"description": "An oh-my-posh feature",
-	"dependsOn": {
-		"ghcr.io/devcontainers/features/common-utils:2": {}
-	}
-}

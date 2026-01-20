@@ -27,26 +27,8 @@ RUN apt-get install -y --no-install-recommends \
 	libreadline-dev \
 	luarocks
 
-# CLI tools
-RUN apt-get install -y --no-install-recommends \
-	fd-find \
-	fzf \
-	ripgrep \
-	tmux
-
 # Cleanup apt cache to reduce image size
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Rust toolchain
-ENV CARGO_HOME=/usr/local/cargo
-ENV RUSTUP_HOME=/usr/local/rustup
-ENV PATH="$CARGO_HOME/bin:$PATH"
-
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
-	&& curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
-
-# Rust-based CLI tools
-RUN cargo binstall -y ast-grep tree-sitter-cli zellij zoxide
 
 # Reset to default
 ENV DEBIAN_FRONTEND=dialog

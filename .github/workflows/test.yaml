@@ -13,16 +13,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - ai
           - heroku
-          - lazygit
-          - lazyvim
           - mise
-          - nvm
-          - oh-my-posh
-          - python
-          - specify
-          - starship
         baseImage:
           - ghcr.io/jmlow/devcontainer-features/base:latest
     steps:
