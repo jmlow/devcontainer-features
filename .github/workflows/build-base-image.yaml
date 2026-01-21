@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'images/base/**'
+      - 'img/base/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'images/base/**'
+      - 'img/base/**'
   workflow_dispatch:
     inputs:
       push_image:
@@ -58,7 +58,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: ./images/base
+          context: ./img/base
           push: ${{ github.event_name != 'pull_request' && (github.event.inputs.push_image != 'false') }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

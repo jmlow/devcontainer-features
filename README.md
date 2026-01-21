@@ -6,30 +6,17 @@
 
 ## Example Contents
 
-This repository contains a _collection_ of four Features - `curl`, `unzip`, `mise`, and `oh-my-posh`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
+This repository contains a _collection_ of 3 Features - `heroku`, `mise`, `sf` - and 1 Image - `base`. These Features serve as simple feature implementations. Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
 
-### `curl`
+### `heroku`
 
-The `curl` feature installs [curl](https://curl.se/) inside the dev container.
-
-```jsonc
-{
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-	"features": {
-		"ghcr.io/jmlow/devcontainer-features/curl:0": {}
-	}
-}
-```
-
-### `unzip`
-
-The `unzip` feature installs unzip inside the dev container.
+The `heroku` feature installs [heroku](https://devcenter.heroku.com/articles/heroku-cli) inside the dev container.
 
 ```jsonc
 {
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "ghcr.io/jmlow/devcontainer-features/base:latest",
 	"features": {
-		"ghcr.io/jmlow/devcontainer-features/unzip:0": {}
+		"ghcr.io/jmlow/devcontainer-features/heroku:0": {}
 	}
 }
 ```
@@ -40,7 +27,7 @@ The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot v
 
 ```jsonc
 {
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "ghcr.io/jmlow/devcontainer-features/base:latest",
 	"features": {
 		"ghcr.io/jmlow/devcontainer-features/mise:0": {
 			"debug": false,
@@ -51,37 +38,38 @@ The `mise` feature installs [mise-en-place](https://mise.jdx.dev/), a polyglot v
 }
 ```
 
-### `oh-my-posh`
+### `sf`
 
-The `oh-my-posh` feature installs [oh-my-posh](https://ohmyposh.dev/), a cross-shell prompt theme engine, inside the dev container.
+The `sf` feature installs [sf](https://developer.salesforce.com/tools/salesforcecli) inside the dev container.
 
 ```jsonc
 {
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "ghcr.io/jmlow/devcontainer-features/base:latest",
 	"features": {
-		"ghcr.io/jmlow/devcontainer-features/oh-my-posh:0": {
-			"config": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/atomic.omp.json"
-		}
-	}
+		"ghcr.io/jmlow/devcontainer-features/sf:0": {
+				"sf_dir": "~/cli/sf"
+		},
+	},
+	"remoteUser": "vscode"
 }
 ```
 
 ## Repo and Feature Structure
 
-Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder. Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`.
+Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder. Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`. This repository also has an `img` folder for the base Docker image intended for these features.
 
 ```
+├── img
+|   └── base
+|       └── Dockerfile
 ├── src
-│   ├── curl
-│   │   ├── devcontainer-feature.json
-│   │   └── install.sh
-│   ├── unzip
+│   ├── heroku
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
 |   ├── mise
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-|   ├── oh-my-posh
+|   ├── sf
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
 |   ├── ...
@@ -96,22 +84,12 @@ An [implementing tool](https://containers.dev/supporting#tools) will composite [
 
 All available options for a Feature should be declared in the `devcontainer-feature.json`. The syntax for the `options` property can be found in the [devcontainer Feature json properties reference](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
 
-For example, the `mise` feature provides several boolean and string options:
+For example, the `mise` feature provides a string options:
 
 ```jsonc
 {
 	// ...
 	"options": {
-		"debug": {
-			"type": "boolean",
-			"default": false,
-			"description": "Enable debug logging"
-		},
-		"quiet": {
-			"type": "boolean",
-			"default": true,
-			"description": "Disable non-error output"
-		},
 		"version": {
 			"type": "string",
 			"default": "",
@@ -121,7 +99,7 @@ For example, the `mise` feature provides several boolean and string options:
 }
 ```
 
-Options are exported as Feature-scoped environment variables. The option name is captialized and sanitized according to [option resolution](https://containers.dev/implementors/features/#option-resolution).
+Options are exported as Feature-scoped environment variables. The option name is capitalized and sanitized according to [option resolution](https://containers.dev/implementors/features/#option-resolution).
 
 ```bash
 #!/bin/bash
@@ -152,11 +130,12 @@ This repo contains a **GitHub Action** [workflow](.github/workflows/release.yaml
 
 _Allow GitHub Actions to create and approve pull requests_ should be enabled in the repository's `Settings > Actions > General > Workflow permissions` for auto generation of `src/<feature>/README.md` per Feature (which merges any existing `src/<feature>/NOTES.md`).
 
-By default, each Feature will be prefixed with the `<owner/<repo>` namespace. For example, the two Features in this repository can be referenced in a `devcontainer.json` with:
+By default, each Feature will be prefixed with the `<owner/<repo>` namespace. For example, the 3 Features in this repository can be referenced in a `devcontainer.json` with:
 
 ```
-ghcr.io/jmlow/devcontainer-features/mise:1
-ghcr.io/jmlow/devcontainer-features/oh-my-posh:1
+ghcr.io/jmlow/devcontainer-features/heroku:0
+ghcr.io/jmlow/devcontainer-features/mise:0
+ghcr.io/jmlow/devcontainer-features/sf:0
 ```
 
 The provided GitHub Action will also publish a third "metadata" package with just the namespace, eg: `ghcr.io/jmlow/devcontainer-features`. This contains information useful for tools aiding in Feature discovery.
